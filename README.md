@@ -7,16 +7,15 @@
 
 ### Examples:
 
-`GameObjectPool.Instantiate(prefab, position, Quaternion.identity);`
-
-`Rigidbody instance = GameObjectPool.Instantiate<Rigidbody>(prefab, parent);`
-
-`GameObjectPool.Destroy(object);`
-
+```c#
+GameObjectPool.Instantiate(prefab, position, Quaternion.identity);
+Rigidbody instance = GameObjectPool.Instantiate<Rigidbody>(prefab, parent);
+GameObjectPool.Destroy(object);
+```
 
 ### Methods:
 
-```
+```c#
 public static T Instantiate<T>(T original) where T : Component;
 
 public static GameObject Instantiate(GameObject original, Vector3 position, 
@@ -47,3 +46,6 @@ public static void Destroy(GameObject obj);
 
 public static void Destroy(GameObject obj, [DefaultValue("0.0F")] float t);
 ```
+
+___________________
+Contacts: https://t.me/zzwzp
